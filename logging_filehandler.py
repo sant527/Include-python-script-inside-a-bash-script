@@ -60,7 +60,7 @@ formatter = VerFormatter('%(topline)s\n%(asctime)s\nXXX%(levelname)sXXX %(funcNa
 #CREATE AND HANDLER AND SET THE LEVEL AND FORMATTER
 #######################
 #handler =  logging.StreamHandler()
-handler = logging.FileHandler('logging_auto_generated.log',mode='w')
+handler = logging.FileHandler('logging_auto_generated.log',mode='a')
 handler.setLevel(logging.DEBUG)
 handler.setFormatter(formatter)
 

@@ -16,6 +16,10 @@ python pyscript.py
 
 Create a file called `logging_filehandler.py` and put the following code inside
 
+This will put the log inside `logging_auto_generated.log`
+
+The log will be appended.
+
 ```python
 import logging
 import traceback
@@ -79,7 +83,7 @@ formatter = VerFormatter('%(topline)s\n%(asctime)s\nXXX%(levelname)sXXX %(funcNa
 #CREATE AND HANDLER AND SET THE LEVEL AND FORMATTER
 #######################
 #handler =  logging.StreamHandler()
-handler = logging.FileHandler('logging_auto_generated.log',mode='w')
+handler = logging.FileHandler('logging_auto_generated.log',mode='a')
 handler.setLevel(logging.DEBUG)
 handler.setFormatter(formatter)
 
