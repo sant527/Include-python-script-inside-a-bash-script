@@ -284,3 +284,8 @@ ctrl + shift + P > bash > set syntax Bash
 ## For python
 
 ctrl + shift + P > python > set syntax python
+
+
+# View the log file
+
+open `logging_auto_generated.log` and `ctrl + shift + P > bash > set syntax Bash`
